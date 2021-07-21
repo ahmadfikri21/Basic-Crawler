@@ -1,0 +1,723 @@
+Array
+(
+    [0] => Array
+        (
+            [0] => 11849012/pengumumanlelang
+            [1] => Pembuatan Peta Potensi dan Peluang Investasi Provinsi
+            [2] => Rp. 300 jt 
+            [3] => 18 Juli 2021 12:00
+            [4] => Kabupaten Gunung Mas, Kabupaten Kapuas - Palangka Raya (Kota)
+            [5] => https://lpse.kalteng.go.id/
+        )
+
+    [1] => Array
+        (
+            [0] => 11958012/pengumumanlelang
+            [1] => Rehabilitasi Toilet (Jamban) SMKS Muhammadiyah Katingan Tengah (1 Ruang)
+            [2] => Rp. 1.34 M 
+            [3] => 20 Juli 2021 08:00
+            [4] => Katingan - Katingan (Kab.)
+            [5] => https://lpse.kalteng.go.id/
+        )
+
+    [2] => Array
+        (
+            [0] => 11919012/pengumumanlelang
+            [1] => Pembangunan Ruang Lab Komputer SMKN 4 Kuala Kapuas (1 Ruang)
+            [2] => Rp. 641.52 jt 
+            [3] => 19 Juli 2021 10:00
+            [4] => Kapuas - Kapuas (Kab.)
+            [5] => https://lpse.kalteng.go.id/
+        )
+
+    [3] => Array
+        (
+            [0] => 11918012/pengumumanlelang
+            [1] => Pembangunan Ruang Praktik Siswa SMK Best Agro 1 ATP (1 Ruang)
+            [2] => Rp. 1.26 M 
+            [3] => 19 Juli 2021 10:00
+            [4] => Kotawaringin Timur - Kotawaringin Timur (Kab.)
+            [5] => https://lpse.kalteng.go.id/
+        )
+
+    [4] => Array
+        (
+            [0] => 11912012/pengumumanlelang
+            [1] => Fisik Revitalisasi Betang di Desa Tumbang Korik
+            [2] => Rp. 824.2 jt 
+            [3] => 16 Juli 2021 08:00
+            [4] => Desa Tumbang Korik - Gunung Mas (Kab.)
+            [5] => https://lpse.kalteng.go.id/
+        )
+
+    [5] => Array
+        (
+            [0] => 11911012/pengumumanlelang
+            [1] => Fisik Revitalisasi Betang Toyoi di Desa Tumbang Malahoi
+            [2] => Rp. 824.29 jt 
+            [3] => 16 Juli 2021 08:00
+            [4] => Desa Tumbang Malahoi - Gunung Mas (Kab.)
+            [5] => https://lpse.kalteng.go.id/
+        )
+
+    [6] => Array
+        (
+            [0] => 11906012/pengumumanlelang
+            [1] => Fisik Revitalisasi Betang di Desa Tumbang Gagu
+            [2] => Rp. 1.26 M 
+            [3] => 16 Juli 2021 08:00
+            [4] => Desa Tumbang Gagu - Kotawaringin Timur (Kab.)
+            [5] => https://lpse.kalteng.go.id/
+        )
+
+    [7] => Array
+        (
+            [0] => 11904012/pengumumanlelang
+            [1] => Pembangunan Fasilitas Panti Sosial Bina Laras Pambelum berupa Bangsal, Dapur dan Tower Air
+            [2] => Rp. 2.68 M 
+            [3] => 20 Juli 2021 08:00
+            [4] => Jl. Pariwisata Kel. Banturung Kec. Bukit Batu - Palangka Raya (Kota)
+            [5] => https://lpse.kalteng.go.id/
+        )
+
+    [8] => Array
+        (
+            [0] => 11948012/pengumumanlelang
+            [1] => Pengawasan Revitalisasi Betang di Desa Tumbang Gagu
+            [2] => Rp. 141.8 jt 
+            [3] => 23 Juli 2021 08:00
+            [4] => Desa Tumbang Gagu - Kotawaringin Timur (Kab.)
+            [5] => https://lpse.kalteng.go.id/
+        )
+
+    [9] => Array
+        (
+            [0] => 11889012/pengumumanlelang
+            [1] => Konsultan FS, MASTERPLAN dan DED Rumah Sakit Rujukan Kelas B
+            [2] => Rp. 2.99 M 
+            [3] => 18 Juli 2021 12:00
+            [4] => Palangka Raya - Palangka Raya (Kota)
+            [5] => https://lpse.kalteng.go.id/
+        )
+
+    [10] => Array
+        (
+            [0] => 15013013/pengumumanlelang
+            [1] => Belanja Persediaan untuk Diserahkan kepada Masyarakat (Hadiah Lomba dan Doorprize) - Sub Kegiatan Pengembangan Budaya Bahari
+            [2] => Rp 314,7 Jt
+            [3] => 25 Juli 2021 23:59
+            [4] => Dinas Kelautan dan Perikanan DIY, Jalan Sagan III/4 Yogyakarta - Yogyakarta (Kota)
+            [5] => https://lpse.jogjaprov.go.id/
+        )
+
+    [11] => Array
+        (
+            [0] => 15010013/pengumumanlelang
+            [1] => Belanja Hibah Barang kepada Badan dan Lembaga yang Bersifat Nirlaba, Sukarela dan Sosial yang Dibentuk Berdasarkan Peraturan Perundang-Undangan (Pengadaan Peralatan Praktik Utama SMK 45 Wonosari-Teknik Kendaraan Ringan Otomotif) Sub Kegiatan Pengadaaan Alat Praktik dan Peraga Peserta Didik-DAK Fisik Bidang Pendidikan SMK
+            [2] => Rp 683,9 Jt
+            [3] => Tidak Dicantumkan
+            [4] => SMK 45 Wonosari - Gunung Kidul (Kab.)
+            [5] => https://lpse.jogjaprov.go.id/
+        )
+
+    [12] => Array
+        (
+            [0] => 14948013/pengumumanlelang
+            [1] => Jasa Konsultansi Penyusunan Background Study RPJMD
+            [2] => Rp 143,9 Jt
+            [3] => 23 Juli 2021 09:59
+            [4] => Bappeda DIY - Yogyakarta (Kota)
+            [5] => https://lpse.jogjaprov.go.id/
+        )
+
+    [13] => Array
+        (
+            [0] => 14832013/pengumumanlelang
+            [1] => Studi Daerah Rawan Kecelakaan di Jalan Provinsi
+            [2] => Rp 199 Jt
+            [3] => 19 Juli 2021 16:00
+            [4] => Jalan Provinsi - Bantul (Kab.)
+            [5] => https://lpse.jogjaprov.go.id/
+        )
+
+    [14] => Array
+        (
+            [0] => 72419014/pengumumanlelang
+            [1] => Belanja Ambulance Standar PSC 119
+            [2] => Rp 450 Jt
+            [3] => Tidak Dicantumkan
+            [4] => Dinas Kesehatan - Garut (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [15] => Array
+        (
+            [0] => 72416014/pengumumanlelang
+            [1] => Sanitarian Kit
+            [2] => Rp 3,5 M
+            [3] => Tidak Dicantumkan
+            [4] => Dinas Kesehatan - Garut (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [16] => Array
+        (
+            [0] => 69378014/pengumumanlelang
+            [1] => Pengadaan Generator Set
+            [2] => Rp 7,1 M
+            [3] => 16 Juli 2021 16:00
+            [4] => RSUD Jampangkulon - Sukabumi (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [17] => Array
+        (
+            [0] => 72584014/pengumumanlelang
+            [1] => Penyusunan DED Tipe I Tempat Rekreasi dan Olahraga Kenari Kota Sukabumi
+            [2] => Rp 447 Jt
+            [3] => 28 Juli 2021 11:59
+            [4] => Jl. L.L.R.E. Martadinata No. 209, Bandung 40114 - Jawa Barat - Indonesia. - Bandung (Kota)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [18] => Array
+        (
+            [0] => 72109014/pengumumanlelang
+            [1] => Jasa Konsultansi Kajian Penyusunan Daya Tampung Beban Pencemar dan Alokasi Beban Pencemar di DAS Cileungsi
+            [2] => Rp 413,8 Jt
+            [3] => 19 Juli 2021 16:00
+            [4] => Jatisari, Buah Batu - Bandung (Kota)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [19] => Array
+        (
+            [0] => 72108014/pengumumanlelang
+            [1] => Jasa Konsultansi Kajian Penyusunan FS IPAL Industri Terpadu di DAS Citarum
+            [2] => Rp 503 Jt
+            [3] => 19 Juli 2021 16:00
+            [4] => Jatisari, Buah Batu - Bandung (Kota)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [20] => Array
+        (
+            [0] => 72107014/pengumumanlelang
+            [1] => Penyusunan Masterplan Geopark di Kabupaten Bogor
+            [2] => Rp 237,5 Jt
+            [3] => 19 Juli 2021 16:00
+            [4] => LLRE Martadinata St No.209, Cihapit, Bandung Wetan, Bandung City, West Java 40114 - Bandung (Kota)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [21] => Array
+        (
+            [0] => 69625014/pengumumanlelang
+            [1] => 1 Pekerjaan Penyusunan Dokumen Perencanaan Alun-Alun Kota Tasikmalaya
+            [2] => Rp 490,9 Jt
+            [3] => 19 Juli 2021 16:00
+            [4] => Kota Tasikmalaya - Tasikmalaya (Kota)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [22] => Array
+        (
+            [0] => 68381014/pengumumanlelang
+            [1] => Penyusunan DED Pusat Pencak Silat
+            [2] => Rp 794,5 Jt
+            [3] => 27 Juli 2021 11:59
+            [4] => Jl. L.L.R.E. Martadinata No. 209, Bandung 40114 - Jawa Barat - Indonesia. - Bandung (Kota)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [23] => Array
+        (
+            [0] => 67299014/pengumumanlelang
+            [1] => SURVEY KONDISI JALAN DI UPTD PENGELOLAAN JALAN DAN JEMBATAN WILAYAH PELAYANAN - III DAN IV
+            [2] => Rp 570,1 Jt
+            [3] => 19 Juli 2021 23:59
+            [4] => Ruas Jalan di UPTD Wipel III, IV - Bandung (Kota)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [24] => Array
+        (
+            [0] => 67298014/pengumumanlelang
+            [1] => SURVEY KONDISI JALAN DI UPTD PENGELOLAAN JALAN DAN JEMBATAN WILAYAH PELAYANAN - I DAN II
+            [2] => Rp 442,4 Jt
+            [3] => 19 Juli 2021 23:59
+            [4] => Ruas Jalan di UPTD Wipel I, II - Cianjur (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [25] => Array
+        (
+            [0] => 67294014/pengumumanlelang
+            [1] => SURVEY KONDISI JALAN DI UPTD PENGELOLAAN JALAN DAN JEMBATAN WILAYAH PELAYANAN - V DAN VI (DAK)
+            [2] => Rp 378,8 Jt
+            [3] => 19 Juli 2021 23:59
+            [4] => Ruas Jalan di UPTD Wipel V, VI - Tasikmalaya (Kota)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [26] => Array
+        (
+            [0] => 65686014/pengumumanlelang
+            [1] => Pekerjaan Penyusunan Rencana Dan Peta Jalan Kolaborasi Penyelenggaraan Perumahan Di Jawa Barat
+            [2] => Rp 353,1 Jt
+            [3] => 26 Juli 2021 11:59
+            [4] => Jawa Barat - Bandung (Kota)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [27] => Array
+        (
+            [0] => 65685014/pengumumanlelang
+            [1] => Pekerjaan Penyelenggaraan Klinik Rumah
+            [2] => Rp 684 Jt
+            [3] => 28 Juli 2021 11:59
+            [4] => Jawa Barat - Bandung (Kota)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [28] => Array
+        (
+            [0] => 72263014/pengumumanlelang
+            [1] => Pengadaan Pembangunan Gedung Negara Sederhana
+            [2] => Rp 570 Jt
+            [3] => 15 Juli 2021 23:59
+            [4] => TPA Pasirbajing Desa Sukaraja Kec. Banyuresmi - Garut (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [29] => Array
+        (
+            [0] => 72262014/pengumumanlelang
+            [1] => Pembangunan Ruang Laboratorium Ilmu Pengetahuan Alam (IPA) SMP IT Nurul Hidayah Cikajang
+            [2] => Rp 463,3 Jt
+            [3] => 16 Juli 2021 14:00
+            [4] => SMP IT Nurul Hidayah Cikajang - Garut (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [30] => Array
+        (
+            [0] => 72261014/pengumumanlelang
+            [1] => Pembangunan Ruang Laboratorium Komputer beserta perabotannya SMP IT Nurul Hidayah Cikajang
+            [2] => Rp 448,2 Jt
+            [3] => 16 Juli 2021 14:00
+            [4] => SMP IT Nurul Hidayah Cikajang - Garut (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [31] => Array
+        (
+            [0] => 72260014/pengumumanlelang
+            [1] => Pembangunan Ruang Tata Usaha beserta perabotannya SMP IT Nurul Hidayah Cikajang
+            [2] => Rp 410,3 Jt
+            [3] => 16 Juli 2021 14:00
+            [4] => SMP IT Nurul Hidayah Cikajang - Garut (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [32] => Array
+        (
+            [0] => 72259014/pengumumanlelang
+            [1] => Pembangunan Ruang Perpustakaan beserta perabotannya SMP IT Nurul Hidayah Cikajang
+            [2] => Rp 398,9 Jt
+            [3] => 16 Juli 2021 14:00
+            [4] => SMP IT Nurul Hidayah Cikajang - Garut (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [33] => Array
+        (
+            [0] => 72112014/pengumumanlelang
+            [1] => Penataan Lapang Olahraga SOR Kerkof
+            [2] => Rp 854,7 Jt
+            [3] => 15 Juli 2021 23:59
+            [4] => Garut - Garut (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [34] => Array
+        (
+            [0] => 71081014/pengumumanlelang
+            [1] => 1 Pekerjaan Pembangunan Gedung Kantor UPTD III
+            [2] => Rp 9,6 M
+            [3] => 19 Juli 2021 12:00
+            [4] => Bandung (Kota) - Bandung (Kota)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [35] => Array
+        (
+            [0] => 70876014/pengumumanlelang
+            [1] => 1 KM Pekerjaan Penunjang Pemeliharaan Berkala Garut - Cikajang
+            [2] => Rp 5 M
+            [3] => 21 Juli 2021 23:59
+            [4] => Kabupaten Garut - Garut (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [36] => Array
+        (
+            [0] => 70875014/pengumumanlelang
+            [1] => 1 KM Pekerjaan Penunjang Peningkatan Jalan Sumedang - Bts. Sumedang/Subang (Cikaramas)
+            [2] => Rp 3 M
+            [3] => 21 Juli 2021 23:59
+            [4] => Kabupaten Sumedang - Sumedang (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [37] => Array
+        (
+            [0] => 70821014/pengumumanlelang
+            [1] => 1 Paket Pekerjaan Lanjutan Pembangunan Gedung Kantor P3DW Kabupaten Cianjur
+            [2] => Rp 16,8 M
+            [3] => 21 Juli 2021 23:59
+            [4] => Jl. Dr. Muwardi 118 Bypass Cianjur - Cianjur (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [38] => Array
+        (
+            [0] => 69681014/pengumumanlelang
+            [1] => Rehabilitasi Ruang Belajar SMK Negeri Paket - 11
+            [2] => Rp 599,3 Jt
+            [3] => 20 Juli 2021 23:59
+            [4] => Jl. Raya Luragung-Cidahu, RT. 3 RW. 3 Kec.Luragung - Kuningan (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [39] => Array
+        (
+            [0] => 69679014/pengumumanlelang
+            [1] => Rehabilitasi Ruang Belajar SMK Negeri Paket - 10
+            [2] => Rp 899,4 Jt
+            [3] => 20 Juli 2021 23:59
+            [4] => Jl. Sukamulya No.1 Kec.Cigugur - Kuningan (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [40] => Array
+        (
+            [0] => 69678014/pengumumanlelang
+            [1] => Rehabilitasi Ruang Belajar SMK Negeri Paket - 9
+            [2] => Rp 410,5 Jt
+            [3] => 20 Juli 2021 23:59
+            [4] => Jl. Raya Jatisari Kec.Jatisari - Karawang (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [41] => Array
+        (
+            [0] => 69677014/pengumumanlelang
+            [1] => Rehabilitasi Ruang Belajar SMK Negeri Paket - 8
+            [2] => Rp 1,1 M
+            [3] => 20 Juli 2021 23:59
+            [4] => Jl. Raya Pabean Udik No.15, Pabeanudik Kec.Indramayu - Indramayu (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [42] => Array
+        (
+            [0] => 69472014/pengumumanlelang
+            [1] => Pembangunan Ruang Praktek Siswa (RPS) SMK Swasta Paket - 56
+            [2] => Rp 1,1 M
+            [3] => 19 Juli 2021 23:59
+            [4] => Jl. Tol Ciawi No. 01 Kec. Ciawi - Bogor (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [43] => Array
+        (
+            [0] => 69213014/pengumumanlelang
+            [1] => Pembangunan Ruang Praktek Siswa (RPS) SMK Negeri Paket - 55
+            [2] => Rp 2,2 M
+            [3] => 19 Juli 2021 23:59
+            [4] => Jl. Karadenan No. 7 Karadenan Kec. Cibinong - Bogor (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [44] => Array
+        (
+            [0] => 68990014/pengumumanlelang
+            [1] => Pembangunan Ruang Praktek Siswa (RPS) SMK Negeri Paket - 58
+            [2] => Rp 995,3 Jt
+            [3] => 19 Juli 2021 23:59
+            [4] => JL. Ki Gede Mayung No.14 B Kec. Gunung Jati - Cirebon (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [45] => Array
+        (
+            [0] => 68989014/pengumumanlelang
+            [1] => Pembangunan Ruang Praktek Siswa (RPS) SMK Swasta Paket - 57
+            [2] => Rp 2 M
+            [3] => 19 Juli 2021 23:59
+            [4] => Jl. KH. Wahid Hasyim, Mertapada Wetan Kec. Astana Japura - Cirebon (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [46] => Array
+        (
+            [0] => 68964014/pengumumanlelang
+            [1] => Pembangunan Ruang Praktek Siswa (RPS) SMK Negeri Paket - 60
+            [2] => Rp 1,9 M
+            [3] => 19 Juli 2021 23:59
+            [4] => Jl. Sukamulya No.1 Kec. Cigugur - Kuningan (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [47] => Array
+        (
+            [0] => 68959014/pengumumanlelang
+            [1] => Pembangunan Ruang Praktek Siswa (RPS) SMK Negeri Paket - 59
+            [2] => Rp 1,9 M
+            [3] => 19 Juli 2021 23:59
+            [4] => Jl. Puter Sari Cikeusik No. 73, Cikeusik Kec. Cidahu - Kuningan (Kab.)
+            [5] => https://lpse.jabarprov.go.id/
+        )
+
+    [48] => Array
+        (
+            [0] => 38333015/pengumumanlelang
+            [1] => Belanja Modal Kendaraan Bermotor Penumpang
+            [2] => Rp. 4.84 M 
+            [3] => 21 Juli 2021 09:59
+            [4] => Biro Umum - Surabaya (Kota)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [49] => Array
+        (
+            [0] => 37296015/pengumumanlelang
+            [1] => Pengadaan Mesin Bor Spindle
+            [2] => Rp. 849.75 jt 
+            [3] => 18 Juli 2021 23:59
+            [4] => Surabaya - Surabaya (Kota)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [50] => Array
+        (
+            [0] => 35837015/pengumumanlelang
+            [1] => Belanja Modal Alat Peraga Pelatihan
+            [2] => Rp. 499.31 jt 
+            [3] => 18 Juli 2021 23:59
+            [4] => malang - Malang (Kab.)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [51] => Array
+        (
+            [0] => 38063015/pengumumanlelang
+            [1] => Belanja Jasa Tenaga Ahli Jasa Konsultan Monev dan Pelaporan Hibah Prov. Jatim. Th 2020 Dilokasi Sampang 1
+            [2] => Rp. 247.81 jt 
+            [3] => 26 Juli 2021 12:00
+            [4] => Kabupaten Sampang - Sampang (Kab.)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [52] => Array
+        (
+            [0] => 38052015/pengumumanlelang
+            [1] => Belanja jasa konsultasi jasa survey perhitungan nilai tambah KUKM di Jatim
+            [2] => Rp. 400 jt 
+            [3] => 19 Juli 2021 10:00
+            [4] => Seluruh Kabupaten / Kota se-Jawa Timur - Sidoarjo (Kab.)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [53] => Array
+        (
+            [0] => 38187015/pengumumanlelang
+            [1] => Konstruksi Fisik Rehabilitasi Aula Kejaksaan Tinggi Jawa Timur
+            [2] => Rp. 7.68 M 
+            [3] => 19 Juli 2021 15:30
+            [4] => Kota Surabaya - Surabaya (Kota)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [54] => Array
+        (
+            [0] => 37159015/pengumumanlelang
+            [1] => Belanja Modal Bangunan Gedung Kantor (Selasar) UPT RSBLK Tuban (Konstruksi)
+            [2] => Rp. 346.5 jt 
+            [3] => 20 Juli 2021 23:59
+            [4] => dsn Nganget Kedungjambe Singgahan - Tuban (Kab.)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [55] => Array
+        (
+            [0] => 35831015/pengumumanlelang
+            [1] => Pembangunan Pelabuhan Brondong Lamongan
+            [2] => Rp. 3.81 M 
+            [3] => 17 Juli 2021 15:30
+            [4] => Kecamatan Brondong, Kabupaten Lamongan - Lamongan (Kab.)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [56] => Array
+        (
+            [0] => 35779015/pengumumanlelang
+            [1] => Belanja Pemeliharaan Bangunan Gedung-Bangunan Gedung Tempat Kerja (konstruksi) UPT. RSBKW KEDIRI
+            [2] => Rp. 390.31 jt 
+            [3] => 19 Juli 2021 15:00
+            [4] => jl. semeru 292 - Kediri (Kota)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [57] => Array
+        (
+            [0] => 37591015/pengumumanlelang
+            [1] => Pengadaan Kaos Olahraga
+            [2] => Rp. 500.03 jt 
+            [3] => 25 Juli 2021 15:30
+            [4] => Manyar Kertoarjo 1 Surabaya - Surabaya (Kota)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [58] => Array
+        (
+            [0] => 37813015/pengumumanlelang
+            [1] => Studi Analisis Dampak Lingkungan (AMDAL) Pelabuhan Jember
+            [2] => Rp. 499.96 jt 
+            [3] => 16 Juli 2021 12:00
+            [4] => Kecamatan Gumukmas, Kabupaten Jember - Jember (Kab.)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [59] => Array
+        (
+            [0] => 37572015/pengumumanlelang
+            [1] => Belanja Modal Gedung dan Bangunan BLUD (Pengawasan Pembangunan Gedung Forensik &amp; Sterilisasi Central) Pembangunan Sarana dan Prasarana RS - RSUD Dr. Saiful Anwar Malang TA 2021
+            [2] => Rp. 592.09 jt 
+            [3] => 15 Juli 2021 23:59
+            [4] => Jl. Jaksa  Agung  Suprapto  No.2  Malang - Malang (Kota)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [60] => Array
+        (
+            [0] => 36006015/pengumumanlelang
+            [1] => AMDAL Pengendali Banjir Sungai Jatiroto ( Bidang PSDA )
+            [2] => Rp. 549.69 jt 
+            [3] => 16 Juli 2021 12:00
+            [4] => Jl. Gayung Kebonsari 169 Surabaya - Surabaya (Kota)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [61] => Array
+        (
+            [0] => 34176015/pengumumanlelang
+            [1] => Perencanaan Pembangunan USB SMKN Wonomerto Kab. Probolinggo
+            [2] => Rp. 406.49 jt 
+            [3] => 22 Juli 2021 15:00
+            [4] => JL. SUKAPURA WONOMERTO - Probolinggo (Kab.)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [62] => Array
+        (
+            [0] => 33229015/pengumumanlelang
+            [1] => Belanja Jasa Konsultansi Perencanaan Arsitektur-Jasa Penilai Perawatan dan Kelayakan Bangunan Gedung RSBL PASURUAN
+            [2] => Rp. 999.99 jt 
+            [3] => 22 Juli 2021 15:00
+            [4] => UPT - Pasuruan (Kab.)
+            [5] => https://lpse.jatimprov.go.id/
+        )
+
+    [63] => Array
+        (
+            [0] => 3812017/pengumumanlelang
+            [1] => Rehabilitasi Pelinggih-Pelinggih Ring Pura Desa lan Puseh Desa Adat Denpasar
+            [2] => Rp. 419.97 jt 
+            [3] => 22 Juli 2021 08:59
+            [4] => Kota Denpasar - Denpasar (Kota)
+            [5] => https://eproc.denpasarkota.go.id/
+        )
+
+    [64] => Array
+        (
+            [0] => 3805017/pengumumanlelang
+            [1] => Pemasangan Pompa, Panel dan Instalasi Pompa Sumur Bor
+            [2] => Rp. 888.07 jt 
+            [3] => 22 Juli 2021 08:59
+            [4] => Perumda Air Minum Tirta Sewakadarma - Denpasar (Kota)
+            [5] => https://eproc.denpasarkota.go.id/
+        )
+
+    [65] => Array
+        (
+            [0] => 3764017/pengumumanlelang
+            [1] => Rehabilitasi Gedung SD 17 Padangsambian
+            [2] => Rp. 399.96 jt 
+            [3] => 15 Juli 2021 23:59
+            [4] => Disdikpora Kota Denpasar Jln. Mawar No.16 - Denpasar (Kota)
+            [5] => https://eproc.denpasarkota.go.id/
+        )
+
+    [66] => Array
+        (
+            [0] => 3797017/pengumumanlelang
+            [1] => Belanja Jasa Pengolahan Sampah
+            [2] => Rp. 550 jt 
+            [3] => 16 Juli 2021 11:00
+            [4] => Puskesmas Se-Kota Denpasar - Denpasar (Kota)
+            [5] => https://eproc.denpasarkota.go.id/
+        )
+
+    [67] => Array
+        (
+            [0] => 3793017/pengumumanlelang
+            [1] => Pengawasan Pembangunan Canal Di IPA Belusung Kota Denpasar
+            [2] => Rp. 346.11 jt 
+            [3] => 21 Juli 2021 23:59
+            [4] => Perumda Air Minum Tirta Sewakadarma - Denpasar (Kota)
+            [5] => https://eproc.denpasarkota.go.id/
+        )
+
+    [68] => Array
+        (
+            [0] => 5548018/pengumumanlelang
+            [1] => Pengadaan Mobil Operasioanal Bencana Alam dan Bencana Sosial
+            [2] => Rp 450 Jt
+            [3] => 19 Juli 2021 13:00
+            [4] => Jl. Brigjen Piola Isa Kota Gorontalo (Dinas Sosial P3A Prov. Gorontalo) - Gorontalo (Kota)
+            [5] => https://lpse.gorontaloprov.go.id/
+        )
+
+    [69] => Array
+        (
+            [0] => 5556018/pengumumanlelang
+            [1] => Rehabilitasi ruang kelas dengan tingkat kerusakan minimal sedang beserta perabotnya SMKN 1 DUHIADAA
+            [2] => Rp 344 Jt
+            [3] => 19 Juli 2021 16:00
+            [4] => Provinsi Gorontalo - Pohuwato (Kab.)
+            [5] => https://lpse.gorontaloprov.go.id/
+        )
+
+    [70] => Array
+        (
+            [0] => 2610020/pengumumanlelang
+            [1] => Pembangunan TPS 3R Gp. Lamjamee Kec. Jaya Baru
+            [2] => Rp 495 Jt
+            [3] => 15 Juli 2021 23:59
+            [4] => Gp. Lamjamee Kec. Jaya Baru - Banda Aceh (Kota)
+            [5] => https://lpse.bandaacehkota.go.id/
+        )
+
+    [71] => Array
+        (
+            [0] => 2601020/pengumumanlelang
+            [1] => Pembangunan Rumah sekolah TK di Kecamatan Kutaraja
+            [2] => Rp 930 Jt
+            [3] => 15 Juli 2021 23:59
+            [4] => Banda Aceh - Banda Aceh (Kota)
+            [5] => https://lpse.bandaacehkota.go.id/
+        )
+
+)

@@ -1,0 +1,323 @@
+/* Global */
+/* @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'sans-serif';
+}
+
+body{
+    background: #EFEFEF;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.form-element input, select{
+    border: 1px #C5C5C5 solid;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #2BBADB;
+}
+
+.formError{
+    color: red;
+}
+
+.button{
+    border: 0 !important;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.btn-darkblue{
+    background: #152E8B;
+}
+
+.btn-darkblue:hover{
+    background: #2BBADB;
+}
+
+.btn-green{
+    background: #02CD0A;
+    cursor:context-menu;
+}
+
+.btn-yellow{
+    background: #FFEF00;
+    width: 70px;
+    margin: 5px auto;
+    cursor:context-menu;
+    font-weight: bold;
+}
+
+.preloader{
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader div{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.preloader h1{
+    color: #2BBADB;
+    font-size: 48px;
+}
+
+.preloader div span{
+    z-index: 101;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #E6212A;
+    animation: loading 1.5s infinite ease-in-out;
+}
+
+.preloader div span:nth-child(2){
+    background: #FFEF00;
+    animation-delay: 0.4s;
+}
+
+.preloader div span:nth-child(3){
+    background: #2BBADB;
+    animation-delay: 0.6s;
+}
+
+@keyframes loading{
+    50%{
+        opacity: 0;
+        transform : scale(0.7) translateY(10px);
+    }
+}
+
+/* Login */
+.loginBackground{
+    background: rgb(43,186,219);
+    background: linear-gradient(120deg, rgba(43,186,219,1) 25%, rgba(21,46,139,1) 75%);
+    min-height: 768px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loginBackground .form-element{
+    margin-bottom: 10px;
+}
+
+.loginBackground .form-element label{
+    font-family: 'Dosis', sans-serif;
+    color: #2BBADB;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.loginBackground img{
+    width: 311px;
+}
+
+.loginBox{
+    min-height: 286px;
+    background: #fff;
+    border-radius: 5px;
+    width: 466px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+.loginBox input[type=submit]{
+    font-family: 'Dosis';
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Navbar */
+nav{
+    height: 64px;
+    background: rgb(43,186,219);
+    background: linear-gradient(90deg, rgba(43,186,219,1) 50%, rgba(21,46,139,1) 100%);
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+nav img{
+    margin-top: 10px;
+    margin-left: 60px;
+    /* flex: 90%; */
+}
+
+nav .logout{
+    /* flex: 15%; */
+    float: right;
+    color: #fff;
+    margin-top: 22px;
+}
+
+/* Mainpage */
+.pageHeader{
+    background: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.mainpageBody{
+    min-height: 972px;
+    height: 100%;
+    background-image: url("../img/bg mainpage.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    padding-bottom: 50px;
+}
+
+.searchBox{
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+.searchBox input[type=text]{
+    flex: 4;
+    margin-right: 10px;
+}
+
+.searchBox select{
+    flex: 2;
+    margin-right: 10px;
+}
+
+.searchBox select:nth-child(){
+    flex: 1;
+}
+
+.searchBox input[type=submit]{
+    flex: 1;
+}
+
+.dataCount{
+    color: #9B9A9A;
+}
+
+.listLpse{
+    background: #fff;
+    min-height: 810px;
+    border-radius: 5px;
+}
+
+.emptyNotice{
+    text-align: center;
+}
+
+.emptyNotice img{
+    margin-top: 20%;
+}
+
+.emptyNotice h1{
+    color: #2BBADB;
+}
+
+.hasilLpse{
+    display: flex;
+    border: 1px solid #C5C5C5;
+    border-radius: 5px;
+    min-height: 100px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nomorPengadaan{
+    flex: 1;
+}
+
+.judulPengadaan{
+    flex: 7;
+    text-align: left;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+.judulPengadaan a{
+    color: #2BBADB;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.judulPengadaan a:hover{
+    color: #68D6EF;
+}
+
+.judulPengadaan span{
+    color: #636363;
+    font-weight: normal;
+}
+
+.nilaiHps{
+    flex: 1;
+}
+
+.deadlineAkhir{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    font-weight: normal;
+}
+
+.pagination{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;   
+    margin-top: 30px;
+}
+
+.page-item{
+    padding: 15px;
+    margin: 0 10px;
+    font-weight: bold;
+    background: #152E8B;
+    color: #fff;
+    text-decoration: none;
+}
+
+.pg-active, .page-item:hover{
+    color: #152E8B;
+    background: #fff;
+    border: 2px #152E8B solid;
+}
