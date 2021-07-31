@@ -59,42 +59,32 @@ class Main_Controller extends Controller
     public function index(Request $request){
         // kondisi untuk cek apakah user telah login atau belum
         if($request->session()->get('username')){
-            $data["urlLpse"] =  
-            [
-                "https://lpse.surabaya.go.id/",
-                "https://www.lpse.nganjukkab.go.id/",
-                "https://lpse.kalteng.go.id/",
-                "https://lpse.jogjaprov.go.id/",
-                "https://lpse.jabarprov.go.id/",
-                "https://lpse.jatimprov.go.id/",
-                "http://lpse.sumbarprov.go.id/",
-                "https://eproc.denpasarkota.go.id/",
-                "https://lpse.gorontaloprov.go.id/",
-                "http://www.lpse.pekanbaru.go.id/",
-                "https://lpse.bandaacehkota.go.id/",
-                "http://lpse.jogjakota.go.id/",
-                "http://lpse.kepriprov.go.id/",
-                "https://lpse.banjarbarukota.go.id/"
-            ];
+            $data["title"] = "Home";
+            $data["urlLpse"] =  $this->Main_Model->getActiveLpseSite();
 
             // mengambil data lpse dari array external
             $data["lpse"] = include "dataLpse.txt";
             
+            $data["jenis_pengadaan"] = $this->Main_Model->getAllCollumnContent("jenis_pengadaan");
+            $data["tahap_proyek"] = $this->Main_Model->getAllCollumnContent("tahap_proyek");
+
             // mengambil page keberapa dari pagination
             $currentPage = LengthAwarePaginator::resolveCurrentPage();
             // jumlah data yang ditampilkan setiap halaman
-            $perPage = 10;
+            $perPage = ($request->session()->get("perPageMain")) ? $request->session()->get("perPageMain") : 20 ;
             // menentukan dari mana data diambil pada saat melakukan array slice.
             $from = $currentPage*$perPage-$perPage;
 
             $keyword = (isset($_GET["keyword"]) == "") ? FALSE : $_GET["keyword"];
             $lpseSite = (isset($_GET["lpseSite"]) == "") ? FALSE : $_GET["lpseSite"];
-            $filterHps = (isset($_GET["filterHps"]) == "") ? FALSE : $_GET["filterHps"];
+            // $filterHps = (isset($_GET["filterHps"]) == "") ? FALSE : $_GET["filterHps"];
+            $jenisPengadaan = (isset($_GET["jenisPengadaan"]) == "") ? FALSE : $_GET["jenisPengadaan"];
+            $tahapProyek = (isset($_GET["tahapProyek"]) == "") ? FALSE : $_GET["tahapProyek"];
 
             // kondisi untuk menghandle jika dilakukan pencarian
-            if ($keyword || $lpseSite || $filterHps){
+            if ($keyword || $lpseSite || $jenisPengadaan || $tahapProyek){
                 // data lpse yang telah difilter sesuai dengan keyword pencarian
-                $data["lpse"] = $this->filterLpse($data["lpse"],$_GET['keyword'],$_GET["lpseSite"],$_GET["filterHps"]);
+                $data["lpse"] = $this->filterLpse($data["lpse"],$keyword,$lpseSite,$jenisPengadaan,$tahapProyek);
                 
                 // menghitung jumlah data yang telah difilter
                 $total = count($data["lpse"]);
@@ -103,7 +93,7 @@ class Main_Controller extends Controller
                 $data["lpse"] = new LengthAwarePaginator(array_slice($data["lpse"],$from,$perPage), $total, $perPage, $currentPage);
                 
                 // memodifikasi path url dari pagination
-                $data["lpse"]->withPath("/Mainpage?keyword=".$request->get('keyword')."&lpseSite=".$request->get("lpseSite")."&filterHps=".$request->get("filterHps"));
+                $data["lpse"]->withPath("/Mainpage?keyword=".$request->get('keyword')."&lpseSite=".$request->get("lpseSite")."&jenisPengadaan=".$request->get("jenisPengadaan")."&tahapProyek=".$request->get("tahapProyek"));
             }else{
                 $total = count($data["lpse"]);
                 
@@ -112,18 +102,24 @@ class Main_Controller extends Controller
                 $data["lpse"]->withPath("/Mainpage");
             }
             
+            $data["perPage"] = $perPage;
             return view('mainpage',$data);
         }else{
             return redirect("/login");
         }
     }
 
-    public function filterLpse($data,$keyword = FALSE,$lpseSite = FALSE,$filterHps = FALSE){
+    public function changePerPageMain(Request $request){
+        $value = $request->get('value');
+        $request->session()->put('perPageMain',$value);
+    }
+
+    public function filterLpse($data,$keyword = FALSE,$lpseSite = FALSE,$jenisPengadaan = FALSE,$tahapProyek = FALSE){
         // melakukan filtering berdasarkan situs lpse yang diinput
         if($lpseSite){
             $array = [];
             for ($i=0; $i < count($data); $i++) { 
-                if ($data[$i][5] == $lpseSite){
+                if (str_contains($data[$i][8],$lpseSite)){
                     $array[] = $data[$i];
                 }
             }
@@ -143,26 +139,46 @@ class Main_Controller extends Controller
             $data = $array2;
         }
 
-        // melakukan filtering berdasarkan filter HPS
-        if($filterHps){
+        if($jenisPengadaan){
             $array3 = [];
-            
-            for ($j=0; $j < count($data); $j++) { 
-                if($filterHps == "1"){
-                    $kondisi = ($data[$j][2] >= 100 && $data[$j][2] < 500);
-                }else if($filterHps == "2"){
-                    $kondisi = ($data[$j][2] >= 500 && $data[$j][2] <= 999);
-                }else{
-                    $kondisi = ($data[$j][2] < 100);
-                }
-                
-                if ($kondisi){
-                    $array3[] = $data[$j];
+            for ($i=0; $i < count($data); $i++) { 
+                if (str_contains($data[$i][6],$jenisPengadaan)){
+                    $array3[] = $data[$i];
                 }
             }
-
             $data = $array3;
         }
+        
+        if($tahapProyek){
+            $array4 = [];
+            for ($i=0; $i < count($data); $i++) { 
+                if (str_contains($data[$i][7],$tahapProyek)){
+                    $array4[] = $data[$i];
+                }
+            }
+            $data = $array4;
+        }
+
+        // melakukan filtering berdasarkan filter HPS
+        // if($filterHps){
+        //     $array3 = [];
+            
+        //     for ($j=0; $j < count($data); $j++) { 
+        //         if($filterHps == "1"){
+        //             $kondisi = ($data[$j][2] >= 100 && $data[$j][2] < 500);
+        //         }else if($filterHps == "2"){
+        //             $kondisi = ($data[$j][2] >= 500 && $data[$j][2] <= 999);
+        //         }else{
+        //             $kondisi = ($data[$j][2] < 100);
+        //         }
+                
+        //         if ($kondisi){
+        //             $array3[] = $data[$j];
+        //         }
+        //     }
+
+        //     $data = $array3;
+        // }
 
         return $data;
     }

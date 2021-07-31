@@ -37,9 +37,13 @@ class refreshLpse extends Command
      */
     public function handle()
     {
+        $start = microtime(true);
+
         $controller = app()->make('App\Http\Controllers\Data_Controller');
         app()->call([$controller, 'Main']);
+        
+        $time_elapsed_secs = (microtime(true) - $start)/60;
 
-        echo "Data telah direfresh";
+        echo "Data telah direfresh, memakan waktu : $time_elapsed_secs menit";
     }
 }

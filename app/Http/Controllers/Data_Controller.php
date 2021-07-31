@@ -4,51 +4,37 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Main_Model;
+
 class Data_Controller extends Controller
 {
+    public function __construct(){
+        // inisialisasi model
+        $this->Main_Model = new Main_Model();
+    }
 
     public function Main(){
         // Main Function
         // list data lpse yang akan diambil
-        $data["urlLpse"] =
-        [
-            "https://lpse.surabaya.go.id/",
-            "https://www.lpse.nganjukkab.go.id/",
-            "https://lpse.kalteng.go.id/",
-            "https://lpse.pu.go.id/",
-            "https://lpse.jabarprov.go.id/",
-            "https://lpse.jatimprov.go.id/"
-            // "http://lpse.sumbarprov.go.id/",
-            // "https://eproc.denpasarkota.go.id/",
-            // "https://lpse.gorontaloprov.go.id/",
-            // "http://www.lpse.pekanbaru.go.id/",
-            // "https://lpse.bandaacehkota.go.id/",
-            // "http://lpse.jogjakota.go.id/",
-            // "http://lpse.kepriprov.go.id/",
-            // "https://lpse.banjarbarukota.go.id/"
-        ];
+        $data["situsLpse"] = $this->Main_Model->getActiveLpseSite();
         // mengambil seluruh data lpse sesuai dengan url lpse
-        $dataLpse = $this->getNLpse($data['urlLpse']);
+        $dataLpse = $this->getNLpse($data['situsLpse']);
 
         // membuat file txt array berdasarkan variabel data lpse
         $arr = array_values($dataLpse);
         // shuffle($arr);
         file_put_contents(base_path().'/app/Http/Controllers/dataLpse.txt', '<?php return '.var_export($arr, TRUE).' ?> ');
 
-        // $write = fopen(base_path().'app\Http\Controller\dataLpse.txt', 'w');
-        // fwrite($write, print_r($arr, true));
-
         return true;
     }
 
     // mengambil data lpse dari sejumlah url
-    public function getNLpse($urlLpse){
-        // $start = microtime(true);
+    public function getNLpse($situsLpse){
         // jumlah dari lpse yang akan diambil
-        $n = count($urlLpse);
+        $n = count($situsLpse);
         // array untuk menyimpan isi dari tiap lpse, yang dipanggil dengan fungsi getLpseData
         $hasil = [];
-        foreach($urlLpse as $url){
+        foreach($situsLpse as $url){
             $lpseData = $this->getLpseData($url);
             if($lpseData != false){
                 array_push($hasil,$lpseData);
@@ -57,8 +43,6 @@ class Data_Controller extends Controller
 
         // mengkonfersi hasil dari 2d menjadi 1d
         $hasil = $this->mergeArray($hasil);
-        // $timeElapsed = microtime(true)-$start;
-        // array_push($hasil,$timeElapsed);
         return $hasil;
     }
 
@@ -74,7 +58,9 @@ class Data_Controller extends Controller
     }
 
     // mengambil data lpse dari sebuah url
-    public function getLpseData($url){
+    public function getLpseData($site){
+        $namaSitus = $site->nama_situs;
+        $url = $site->link;
         // mengambil halaman lpse
         $lpse = $this->curlGetContents($url);
         // untuk cek apakah situs merespon atau tidak
@@ -90,11 +76,11 @@ class Data_Controller extends Controller
                 preg_match_all('~<td.*?class="center".*?>(.*?)</td>~',$lpse,$deadline);
                 // mengambil jenis dari proyek
                 preg_match_all('~<td.*?class="bs-callout-info".*?>(.*?)</td>~',$lpse,$count);
-                // mengambil title dari situs lpse
-                preg_match('/\<title.*\>(.*)\<\/title\>/isU',$lpse,$situs);
+                // // mengambil title dari situs lpse
+                // preg_match('/\<title.*\>(.*)\<\/title\>/isU',$lpse,$situs);
                 
-                // menghilangkan tulisan :Home dari nama situs yang diambil
-                $situs = str_replace(array(":","-","Home","\n"),"",$situs[1]);
+                // // menghilangkan tulisan :Home dari nama situs yang diambil
+                // $situs = str_replace(array(":","-","Home","\n"),"",$situs[1]);
 
                 // untuk menghilangkan data non-tender
                 $hps[1] = array_slice($hps[1],0,count($judul[2]));
@@ -121,7 +107,7 @@ class Data_Controller extends Controller
                 // menyatukan data judul, hps dan deadline yang telah didapat menggunkana array multidimensi
                 for ($i=0; $i < count($judul[2]) ; $i++) { 
                     // mengambil lokasi dari setiap pengadaan
-                    $return = $this->getLokasiAndTahapPengadaan($url."eproc4/lelang/".$judul[1][$i]);
+                    $return = $this->getLokasiAndTahapPengadaan($url."/lelang/".$judul[1][$i]);
                     
                     if($deadline[1][$i] == " "){
                         $deadline[1][$i] = "Tidak Dicantumkan";
@@ -157,7 +143,7 @@ class Data_Controller extends Controller
                     array_push($hasil[$i],$url);
                     array_push($hasil[$i],$jenis);
                     array_push($hasil[$i],$return["tahap"]);
-                    array_push($hasil[$i],$situs);
+                    array_push($hasil[$i],$namaSitus);
 
                 }
                 return $hasil;

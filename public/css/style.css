@@ -20,7 +20,7 @@ a{
     margin: 0 auto;
 }
 
-.form-element input, select{
+.form-element input[type=text], input[type=password], select{
     border: 1px #C5C5C5 solid;
     border-radius: 5px;
     font-size: 18px;
@@ -29,7 +29,15 @@ a{
     box-sizing: border-box;
 }
 
-input:focus{
+.form-element input[type=radio]{
+    cursor: pointer;
+}
+
+input[type=checkbox]{
+    cursor: pointer;
+}
+
+input[type=text]:focus, input[type=password]:focus{
     outline: none;
     border: 2px solid #2BBADB;
 }
@@ -42,16 +50,30 @@ input:focus{
     border: 0 !important;
     border-radius: 5px;
     cursor: pointer;
-    padding: 10px 0;
+    padding: 10px;
     color: #fff;
 }
 
+.btn-lightBlue{
+    background: linear-gradient(to right, #152E8B 50%, #2BBADB 50%);
+    background-size: 200% 100%;
+    transition: all .5s ease-out;
+    background-position: right bottom;
+}
+
+.btn-lightBlue:hover{
+    background-position: left bottom;
+}
+
 .btn-darkblue{
-    background: #152E8B;
+    background: linear-gradient(to right, #2BBADB 50%, #152E8B 50%);
+    background-size: 200% 100%;
+    transition: all .5s ease-out;
+    background-position: right bottom;
 }
 
 .btn-darkblue:hover{
-    background: #2BBADB;
+    background-position: left bottom;
 }
 
 .btn-green{
@@ -116,7 +138,87 @@ input:focus{
     }
 }
 
-/* Login */
+.successMessage{
+    width: 100%;
+    background: lightgreen;
+    color: green;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.errorMessage{
+    width: 100%;
+    background: salmon;
+    color: red;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+/* background dari modalnya */
+.modal{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modalContent{
+    background: #fff;
+    border-radius: 10px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.modalHeader{
+    background: #2BBADB;
+    border-radius: 10px 10px 0px 0px;
+    color: #fff;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalHeader span{
+    cursor: pointer;
+}
+
+.modalBody{
+    padding: 10px 20px;
+}
+
+.modalBody .form-element{
+    margin-bottom: 10px;
+}
+
+.modalFooter{
+    border-top: 1px solid #C5C5C5;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalFooter button{
+    border: 0;
+    background: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #2BBADB;
+}
+
+.modalFooter button:hover {
+    background-position: left bottom;
+  }
+/*============ Login =============== */
 .loginBackground{
     background: rgb(43,186,219);
     background: linear-gradient(120deg, rgba(43,186,219,1) 25%, rgba(21,46,139,1) 75%);
@@ -181,11 +283,17 @@ nav img{
     /* flex: 90%; */
 }
 
-nav .logout{
+nav .navLinks{
     /* flex: 15%; */
     float: right;
     color: #fff;
+    opacity: .6;
     margin-top: 22px;
+    margin-right: 10px;
+}
+
+nav .navLinks:hover, .nav-active{
+    opacity: 1 !important;
 }
 
 /* Mainpage */
@@ -214,7 +322,7 @@ nav .logout{
 }
 
 .searchBox input[type=text]{
-    flex: 4;
+    flex: 2;
     margin-right: 10px;
 }
 
@@ -320,4 +428,165 @@ nav .logout{
     color: #152E8B;
     background: #fff;
     border: 2px #152E8B solid;
+}
+
+/* ======= Halaman Manage ========= */
+.manageBody{
+    min-height: 700px;
+}
+
+.choosePageBox{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.choosePageBox h3{
+    font-size: 48px;
+    font-family: 'Dosis';
+    background: #2BBADB;
+    color: #fff;
+    padding: 250px 20px;
+}
+
+.choosePageBox #linkManajemenSitus{
+    flex: 1;
+    cursor: pointer;
+}
+
+.choosePageBox #linkManajemenSitus:hover,.choosePageBox #linkManajemenTahap:hover{
+    color: #2BBADB;
+    background: #fff;
+}
+
+.choosePageBox #linkManajemenTahap{
+    flex: 1;
+    cursor: pointer;
+}
+
+/* ======= Manajemen Situs ======== */
+
+.tableTitle{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.tableTitle h3{
+    display: inline-block;
+    color: #565656;
+    margin-right: 10px;
+}
+
+.tableTitle select{
+    max-width: 80px;
+}
+
+.btnTambahAndSearch{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.btnTambahAndSearch form{
+    flex: 50%;
+    text-align: right;
+}
+
+.btnTambahAndSearch input[type=text]{
+    width: 300px;
+}
+
+.btnTambahAndSearch input[type=submit]{
+    width: 70px;
+    height: 36px;
+}
+
+.btnTambahAndSearch div{
+    flex: 50%;
+}
+
+.tableSitusLpse{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.tableSitusLpse th{
+    background: #2BBADB;
+    padding: 5px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.tableSitusLpse td{
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.tableSitusLpse .rowGanjil{
+    background: #fff;
+}
+
+.tableSitusLpse .rowGenap{
+    background: #E5E5E5;
+}
+
+.tableSitusLpse .rowOff{
+    background: #9B9A9A;
+}
+
+.tableSitusLpse button{
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.tableSitusLpse img{
+    width: 30px;
+}
+
+.tableSitusLpse input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+}
+
+.tableFooter{
+    margin-top: 10px;
+    display: flex;
+}
+
+.tableFooter input[type=submit]{
+    border: 0;
+    background: url('../img/statusButton.svg');
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.tableFooter #deleteAll, .tableFooter #deleteSelected{
+    background: url('../img/trashRed.svg');
+}
+
+.tableFooter #checkAll{
+    width: 20px;
+    height: 20px;
+}
+
+.tableFooter .pagination{
+    flex: 1;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.tableFooter .pagination .page-item{
+    background: #2BBADB;
+}
+
+.tableFooter .pg-active, .tableFooter .page-item:hover {
+    border: 1px solid #2BBADB;
+    color: #2BBADB;
+    background: #fff !important;
 }
