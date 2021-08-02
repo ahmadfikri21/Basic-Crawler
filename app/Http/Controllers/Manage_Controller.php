@@ -16,9 +16,13 @@ class Manage_Controller extends Controller
     }
 
     public function index(Request $request){
-        $data["title"] = "Manage";
+        if($request->session()->get('username')){
+            $data["title"] = "Manage";
 
-        return view("manageHome",$data);
+            return view("manageHome",$data);
+        }else{
+            return redirect("/login");
+        }
     }
     
     // manajemen situs
@@ -109,7 +113,7 @@ class Manage_Controller extends Controller
         if($request->post("checkbox")){
             $id = $request->post("checkbox");
         }
-        
+
         if($request->session()->get('username')){
             if($this->Main_Model->hapusSitus($id)){
                 $request->session()->flash('succNotice','Data berhasil dihapus !');

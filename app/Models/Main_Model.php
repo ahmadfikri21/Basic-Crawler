@@ -27,8 +27,13 @@ class Main_Model extends Model
     public function getLpseSite($perPage = 20){
         $situs = DB::table('situs_lpse')
                         ->distinct()
-                        ->orderby("status","ASC")
-                        ->orderby("kategori","ASC")
+                        ->orderByRaw("status ASC, Case kategori
+                                        when 'Kementerian' then 1
+                                        when 'Instansi' then 2
+                                        when 'Provinsi' then 3
+                                        when 'Kabupaten' then 4
+                                        when 'Kota' then 5
+                                    end, nama_situs ASC")
                         ->paginate($perPage);
 
         return $situs;
@@ -37,7 +42,9 @@ class Main_Model extends Model
     public function searchLpseSite($keyword,$perPage = 20){
         $situs = DB::table("situs_lpse")
                         ->where("nama_situs","like","%$keyword%")
+                        ->orWhere("kategori","like","%$keyword%")
                         ->orWhere("status","like","%$keyword%")
+                        ->orderby("status","ASC")
                         ->paginate($perPage);
 
         // agar keyword dapat dioper ke url pada saat page ke 2 atau lebih  

@@ -242,7 +242,8 @@ input[type=text]:focus, input[type=password]:focus{
 }
 
 .loginBackground img{
-    width: 311px;
+    width: 350px;
+    margin-bottom: 10px;
 }
 
 .loginBox{
@@ -279,7 +280,7 @@ nav{
 
 nav img{
     margin-top: 10px;
-    margin-left: 60px;
+    margin-left: 160px;
     /* flex: 90%; */
 }
 
