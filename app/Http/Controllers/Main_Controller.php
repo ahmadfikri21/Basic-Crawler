@@ -63,8 +63,11 @@ class Main_Controller extends Controller
             $data["urlLpse"] =  $this->Main_Model->getActiveLpseSite();
 
             // mengambil data lpse dari array external
-            $data["lpse"] = include "dataLpse.txt";
-            
+            // $data["lpse"] = include "dataLpse.txt";
+            $getjson = file_get_contents(base_path().'/app/Http/Controllers/dataLpse.json');
+            $data["lpse"] = json_decode($getjson);
+            // dd(json_decode($data["lpse"]));
+
             $data["jenis_pengadaan"] = $this->Main_Model->getAllCollumnContent("jenis_pengadaan");
             $data["tahap_proyek"] = $this->Main_Model->getAllCollumnContent("tahap_proyek");
 

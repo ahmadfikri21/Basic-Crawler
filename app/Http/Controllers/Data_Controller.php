@@ -23,7 +23,10 @@ class Data_Controller extends Controller
         // membuat file txt array berdasarkan variabel data lpse
         $arr = array_values($dataLpse);
         // shuffle($arr);
-        file_put_contents(base_path().'/app/Http/Controllers/dataLpse.txt', '<?php return '.var_export($arr, TRUE).' ?> ');
+        $json = json_encode($arr);
+        file_put_contents(base_path().'/app/Http/Controllers/dataLpse.json', $json);
+        // file_put_contents(base_path().'/app/Http/Controllers/dataLpse.txt', '<?php return '.var_export($arr, TRUE).' ?
+        // > ');
 
         return true;
     }
