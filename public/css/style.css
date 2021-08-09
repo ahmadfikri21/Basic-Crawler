@@ -433,7 +433,8 @@ nav .navLinks:hover, .nav-active{
 
 /* ======= Halaman Manage ========= */
 .manageBody{
-    min-height: 700px;
+    background: url("../img/bg\ mainpage.svg");
+    height: 500px;
 }
 
 .choosePageBox{
@@ -448,12 +449,13 @@ nav .navLinks:hover, .nav-active{
     font-family: 'Dosis';
     background: #2BBADB;
     color: #fff;
-    padding: 250px 20px;
+    padding: 100px 20px;
 }
 
 .choosePageBox #linkManajemenSitus{
     flex: 1;
     cursor: pointer;
+    margin-right: 30px;
 }
 
 .choosePageBox #linkManajemenSitus:hover,.choosePageBox #linkManajemenTahap:hover{

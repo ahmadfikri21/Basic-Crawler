@@ -2,7 +2,7 @@
 
 @section('content')
     <h1 class="pageHeader">Manajemen Situs</h1>
-    <div class="mainpageBody manageBody">
+    <div class="manageBody">
         <div class="container">
             <div class="choosePageBox">
                 <h3 id="linkManajemenSitus">Manajemen <br> Situs Lpse</h3>
